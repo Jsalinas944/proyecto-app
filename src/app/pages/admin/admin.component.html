@@ -19,16 +19,16 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor='let j of juego'>
-                        <td>{{c.nombre}}</td>
-                        <td>{{c.descripcion}}</td>
+                    <tr *ngFor='let j of juegos'>
+                        <td>{{j.nombre}}</td>
+                        <td>{{j.descripcion}}</td>
                         <td class="td-actions">
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-whatever="@mdo" (click)="editar(c)">
+                            data-bs-whatever="@mdo" (click)="editar(j)">
                                 Editar
                             </button>
 
-                            <button class="btn btn-small btn-danger" (click)="eliminar(c.id)">
+                            <button class="btn btn-small btn-danger" (click)="eliminar(j.id)">
                                 eliminar
                             </button>
                         </td>

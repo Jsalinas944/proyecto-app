@@ -14,6 +14,11 @@ import { AdminComponent } from './pages/admin/admin.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
 import { EventosComponent } from './pages/eventos/eventos.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
+
+
 
 
 const appRoutes:Routes=[
@@ -41,6 +46,8 @@ const appRoutes:Routes=[
     MenubarModule,
     RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp (environment.firebaseConfig),
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
